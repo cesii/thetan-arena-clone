@@ -18,7 +18,7 @@ Projenin çalışması için bazı adımları takip etmeniz gerekmektedir.
 
 1. Projeyi bilgisayarınıza kopyalayın:
 ```
-git clone https://github.com/kullaniciadi/proje-adı.git
+git clone https://github.com/cesii/thetan-arena-clone
 ```
 
 2. Proje klasörüne gidin:
