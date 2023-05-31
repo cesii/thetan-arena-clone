@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the official Marketplace of Thetan Arena - 1st MOBA NFT game. Pick your favorite Thetan Hero &amp; Open Thetan box including various Heroes to start the battles in our Esport game based on blockchain technology."/>
+    <meta name="keywords" content="Thetan Arena, Thetan Arena Marketplace, Thetan Arena NFT, Thetan Arena NFT Marketplace, Thetan Arena NFT Game, Thetan Arena NFT Game Marketplace, NFT, Arena, Thetan, Marketplace"/>
+    <meta name="author" content="Thetan Arena" />
+    <meta property="og:title" content="Thetan Arena Marketplace" />
+    <meta property="og:description" content="This is the official Marketplace of Thetan Arena - 1st MOBA NFT game. Pick your favorite Thetan Hero &amp; Open Thetan box including various Heroes to start the battles in our Esport game based on blockchain technology."/>
+    <meta property="og:image" content="https://thetanarena.netlify.app/images/favicon.png"/>
+    <meta property="og:url" content="https://thetanarena.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Thetan Arena Marketplace" />
+    <title>Thetan Arena Marketplace</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="h-full bg-[#0f0933] text-white scrollbar-hide">
+    <!-- Navbar -->
+    <nav
+      class="flex items-center justify-between w-full bg-[#020205] shadow-[0_16px_24px_#00000026] z-50 fixed h-[68px] laptop-l:h-[52px] laptop:h-[60px] top-0 right-0 font-medium"
+    >
+      <div class="flex items-center h-full">
+        <a
+          href="index.html"
+          class="bg-[url('images/logo-bg.png')] bg-[#5333ff] w-[104px] clip-path h-full bg-no-repeat bg-cover flex items-center justify-center pr-[10px] mr-[-12.8px] laptop-l:w-[80px]"
+        >
+          <img
+            src="images/logo.png"
+            alt="logo"
+            class="w-[52px] h-full object-contain laptop-l:w-[40px]"
+          />
+        </a>
+        <ul
+          class="flex items-center capitalize text-[#c9c5db] h-full laptop:hidden"
+        >
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-blue menu-clip-path px-[40px] border-b-4 border-[#47a6ff] text-base laptop-l:text-xs laptop:text-sm"
+              >dashboard</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >ThetanBox</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >buy</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >rent</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >special event</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >staking</a
+            >
+          </li>
+          <li class="h-full -mr-4">
+            <a
+              href="#"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm"
+              >daily quest</a
+            >
+          </li>
+          <li class="relative h-full -mr-4" id="dropdown">
+            <span
+              onclick="dropdown();"
+              class="flex items-center justify-center h-full bg-darkblue menu-clip-path px-[40px] hover:bg-blue transition-colors text-base laptop-l:text-xs laptop:text-sm gap-2 cursor-pointer capitalize"
+              >more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 0 24 24"
+                width="20px"
+                class="fill-current"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                <path d="M7 10l5 5 5-5z"></path>
+              </svg>
+            </span>
+            <div
+              class="invisible transition-all duration-300 origin-top-right transform scale-95 -translate-y-2 opacity-0 dropdown-menu"
+            >
+              <div
+                class="absolute w-72 mt-2 origin-top-right translate-x-1/2 border border-[#ffffff1a] rounded-md right-2/4 bg-[#000022b3] p-2 laptop-l:w-56 backdrop-blur-[100px] text-[#c9c5db]"
+              >
+                <span
+                  class="flex items-center gap-2 p-2 hover:bg-[#00baff26] transition-colors rounded-md cursor-pointer laptop-l:text-xs laptop:text-sm"
+                >
+                  <img
+                    src="images/menu-1.svg"
+                    alt="menu"
+                    class="laptop-l:w-[30px]"
+                  />
+                  Conversion Program
+                </span>
+                <span
+                  class="flex items-center gap-2 p-2 hover:bg-[#00baff26] transition-colors rounded-md cursor-pointer laptop-l:text-xs laptop:text-sm"
+                >
+                  <img
+                    src="images/menu-2.svg"
+                    alt="menu"
+                    class="laptop-l:w-[30px]"
+                  />
+                  vesting safe
+                </span>
+                <span
+                  class="flex items-center gap-2 p-2 hover:bg-[#00baff26] transition-colors rounded-md cursor-pointer laptop-l:text-xs laptop:text-sm"
+                >
+                  <img
+                    src="images/menu-3.svg"
+                    alt="menu"
+                    class="laptop-l:w-[30px]"
+                  />
+                  Creator corner
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center justify-center gap-3 pr-6">
+        <button
+          class="bg-[#2390ff] px-3 py-2 capitalize text-white rounded-md laptop-l:text-xs laptop:text-sm"
+        >
+          connect wallet
+        </button>
+        <button
+          class="justify-end hidden cursor-pointer laptop:inline-flex"
+          onclick="mobilenav();"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30px"
+            viewBox="0 0 24 24"
+            width="30px"
+            class="transition duration-500 fill-white hover:fill-blue-400"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="mobilenav"
+      class="bg-[#261858] pt-[60px] fixed top-0 right-0 z-[45] w-[290px] h-screen overflow-auto translate-x-full transition scrollbar-hide mobile-s:w-[280px]"
+    >
+      <ul
+        id="more"
+        class="flex-col items-center capitalize text-[#c9c5db] h-full hidden"
+      >
+        <li class="w-full pt-5">
+          <span
+            onclick="backmore();"
+            class="flex gap-3 w-full px-8 py-3 text-white border-b border-b-[#2a1d9140] cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              class="fill-current rotate-[90deg]"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none"></path>
+              <path d="M7 10l5 5 5-5z"></path>
+            </svg>
+            More
+          </span>
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >Conversion program</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >vesting safe</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >Creator corner</a
+          >
+        </li>
+      </ul>
+      <ul
+        id="menu"
+        class="flex flex-col items-center capitalize text-[#c9c5db] h-full"
+      >
+        <li class="w-full pt-5">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-white border-l-4 border-l-[#7b61ff] border-y border-y-[#2a1d9140]"
+            >dashboard</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >ThetanBox</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >buy</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >rent</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >special event</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >staking</a
+          >
+        </li>
+        <li class="w-full">
+          <a
+            href="#"
+            class="inline-flex w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140]"
+            >daily quest</a
+          >
+        </li>
+        <li class="w-full">
+          <span
+            onclick="more();"
+            class="flex justify-between w-full px-8 py-3 text-[#948db3] border-b border-b-[#2a1d9140] cursor-pointer"
+            >More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              class="fill-current rotate-[270deg]"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none"></path>
+              <path d="M7 10l5 5 5-5z"></path>
+            </svg>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Backdrop Filter -->
+    <div
+      id="bgFilter"
+      class="bg-[#130b21d9] w-screen h-screen z-40 fixed backdrop-blur-[32px] opacity-0 invisible transition-opacity">
+    </div>
+
+    <!-- Main -->
+    <div class="mt-[68px] laptop-l:mt-[52px] laptop:mt-[60px]">
+      <!-- Swiper -->
+      <div class="text-base laptop-xl:text-xs laptop:text-base">
+        <div class="swiper mainSlider h-[25em] laptop:h-auto laptop:aspect-[768/220]">
+          <div class="swiper-wrapper">
+            <div class="pointer-events-none swiper-slide">
+              <img class="object-cover w-full h-full" src="images/banner/Banner-HeroTrading.png" alt="Banner-HeroTrading">
+            </div>
+            <div class="pointer-events-none swiper-slide">
+              <img class="object-cover w-full h-full" src="images/banner/Banner_MKPQuest.jpeg" alt="Banner_MKPQuest">
+            </div>
+            <div class="pointer-events-none swiper-slide">
+              <img class="object-cover w-full h-full" src="images/banner/Banner-WelcomGiftBox.png" alt="Banner-WelcomGiftBox">
+            </div>
+          </div>
+          <div class="flex items-center justify-center w-full laptop:text-[8px] tablet:text-[6px]">
+              <div class="!left-auto !w-auto swiper-pagination bg-[#00000080] flex p-[.625em] rounded-[.5em] !bottom-[1em]"></div>
+          </div>
+          <div class="right-0 w-auto text-white swiper-button-next laptop:text-xs tablet:text-[10px] flex transition-colors mobile-xl:hidden"></div>
+          <div class="left-0 w-auto text-white swiper-button-prev laptop:text-xs tablet:text-[10px] flex transition-colors mobile-xl:hidden"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center pb-[180px] laptop-l:pb-[135px] laptop:pb-[54px] tablet:pb-14">
+        <div class="w-[1440px] px-[51px] mobile-xl:px-6 laptop-xl:w-[1024px] laptop:w-[780px] tablet:w-[500px] mobile-xl:w-full">
+          <div class="flex items-center w-full py-14 mobile-xl:py-6">
+            <div class="border border-[#ffffff1a] rounded-md statistics pt-8 w-full">
+              <div class="w-full border-b border-[#ffffff1a] px-9 mobile-xl:px-5">
+                <ul class="flex gap-6 text-[#c9c5db] font-medium tablet:text-sm mobile-xl:text-xs mobile-xl:justify-between mobile-xl:flex-wrap mobile-l:grid mobile-l:grid-cols-2">
+                  <li class="pb-[10px] min-w-[64px] flex justify-center cursor-pointer active" data-values="122,1214074,487">Last 24h</li>
+                  <li class="pb-[10px] min-w-[64px] flex justify-center cursor-pointer" data-values="738,8898863,3305">7 days</li>
+                  <li class="pb-[10px] min-w-[64px] flex justify-center cursor-pointer" data-values="3628,39663642,15030">30 days</li>
+                  <li class="pb-[10px] min-w-[64px] flex justify-center cursor-pointer" data-values="154702,1942324612,1371704">All</li>
+                </ul>
+              </div>
+              <div class="grid justify-between w-full grid-cols-3 p-9 mobile-xl:p-5 laptop:grid-cols-2 tablet:grid-cols-1 tablet:grid-rows-3 laptop:gap-3">
+                <div class="flex items-center gap-4">
+                  <img src="images/total.svg" alt="total" class="tablet:w-16 mobile-xl:w-14">
+                  <div class="flex flex-col">
+                    <span class="text-[#c4b7fc] font-bold tablet:text-sm mobile-xl:text-xs">TOTAL LISTED</span>
+                    <span class="text-3xl font-bold tablet:text-2xl mobile-xl:text-xl" id="total-listed">0</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <img src="images/transaction.svg" alt="transaction" class="tablet:w-16 mobile-xl:w-14">
+                  <div class="flex flex-col">
+                    <span class="text-[#c4b7fc] font-bold tablet:text-sm mobile-xl:text-xs">TRANSACTION VOLUME (THC)</span>
+                    <span class="text-3xl font-bold tablet:text-2xl mobile-xl:text-xl" id="transaction-volume">0</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <img src="images/item.svg" alt="item" class="tablet:w-16 mobile-xl:w-14">
+                  <div class="flex flex-col">
+                    <span class="text-[#c4b7fc] font-bold tablet:text-sm mobile-xl:text-xs">ITEMS TRADED</span>
+                    <span class="text-3xl font-bold tablet:text-2xl mobile-xl:text-xl" id="items-traded">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col recenctly pb-14 mobile-xl:pb-6">
+            <h2 class="text-[28px] font-semibold tablet:text-2xl mobile-xl:text-xl">RECENTLY LISTED</h2>
+            <div class="flex w-full gap-4 py-[30px] text-[#ffffff73] recenctly-list">
+              <div class="flex items-center justify-center gap-3 w-52 active pb-[15px] mobile-xl:w-40 cursor-pointer" id="heroes">
+                <img src="images/heroes.svg" alt="heroes" class="tablet:w-5 mobile-xl:w-4">
+                <span class="text-xl font-semibold capitalize tablet:text-lg mobile-xl:text-base">Heroes</span>
+              </div>
+              <div class="flex items-center justify-center gap-3 w-52 pb-[15px] mobile-xl:w-40 cursor-pointer" id="cosmetics">
+                <img src="images/cosmetics.svg" alt="cosmetics" class="tablet:w-5 mobile-xl:w-4">
+                <span class="text-xl font-semibold capitalize tablet:text-lg mobile-xl:text-base">Cosmetics</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-8 pb-8 heroes">
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-1.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-blue">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="text-[#00f0ff] text-[.75em] uppercase font-semibold">DYNASTY'S RANGER</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">SHANNA</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">26 minutes ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-red-600">913/913</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">729 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/a.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">7</span>
+                        </div>
+                        <img src="images/assassin.svg" alt="assassin" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-2.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-yellow">
+                      <div class="pl-[1em] border-l-4 border-l-[#ffee57]">
+                        <span class="text-[#ffee57] text-[.75em] uppercase font-semibold">GOLDEN HAND</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">LUCY MUFFY</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">54/237</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">1,600 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/b.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">2</span>
+                        </div>
+                        <img src="images/tank.svg" alt="tank" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-4.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-aqua">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="text-[#00f0ff] text-[.75em] uppercase font-semibold">The Baby</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">BIG PAPA</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">32/764</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">1,900 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/d.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">5</span>
+                        </div>
+                        <img src="images/marksman.svg" alt="marksman" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-3.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-orange">
+                      <div class="pl-[1em] border-l-4 border-l-[#ffee57]">
+                        <span class="text-[#ffee57] text-[.75em] uppercase font-semibold">ELF GUARDIAN</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">SERP</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-red-600">57/355</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">678 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/ss.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">10</span>
+                        </div>
+                        <img src="images/assassin.svg" alt="assassin" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-5.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-red">
+                      <div class="pl-[1em] border-l-4 border-l-[#ff7f7f]">
+                        <span class="text-[#ff7f7f] text-[.75em] uppercase font-semibold">penguin</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">VELVET</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">0/898</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">1690 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/s.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">11</span>
+                        </div>
+                        <img src="images/tank.svg" alt="tank" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-6.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-aqua">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="text-[#00f0ff] text-[.75em] uppercase font-semibold">BOOMBY SHARK</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">PHOENIX</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-red-600">899/889</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">999 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/e.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">9</span>
+                        </div>
+                        <img src="images/marksman.svg" alt="marksman" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-7.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-red">
+                      <div class="pl-[1em] border-l-4 border-l-[#ff7f7f]">
+                        <span class="text-[#ff7f7f] text-[.75em] uppercase font-semibold">CAT NINJA</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">DURASS</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-red-600">147/147</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">600 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/c.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">10</span>
+                        </div>
+                        <img src="images/marksman.svg" alt="marksman" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-8.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-purple">
+                      <div class="pl-[1em] border-l-4 border-l-[#ad00ff]">
+                        <span class="text-[#ff7bfa] text-[.75em] uppercase font-semibold">ROGUE SOLDIER</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">CLUSTER</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">27/447</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">1,600 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/h.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">3</span>
+                        </div>
+                        <img src="images/tank.svg" alt="tank" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-9.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-blue">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="text-[#00f0ff] text-[.75em] uppercase font-semibold">FORGOTTEN SAMURAI</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">EL DRAGON</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">0/557</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">2,221 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/f.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">8</span>
+                        </div>
+                        <img src="images/assassin.svg" alt="assassin" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-10.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-purple">
+                      <div class="pl-[1em] border-l-4 border-l-[#ad00ff]">
+                        <span class="text-[#ff7bfa] text-[.75em] uppercase font-semibold">GODZ-RILLA</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">KONG KEY</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">0/447</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">99,999 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/g.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">4</span>
+                        </div>
+                        <img src="images/tank.svg" alt="tank" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-wrap hidden gap-8 pb-8 cosmetics">
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-1.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">EMOTE</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">26 minutes ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">729 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/cosmetics/cosmetic-13.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-purple">
+                      <div class="pl-[1em] border-l-4 border-l-[#ad00ff]">
+                        <span class="text-[#ff7bfa] text-[.75em] uppercase font-semibold">LUNAR NEW YEAR</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">SPACESHIP</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">99,999 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-2.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">38 minutes ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">700 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-3.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR FRAME</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">11 hours ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">307 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-4.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">21 hours ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">150 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-5.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">23 hours ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">70 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-6.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">EMOTE</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a day ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">50 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-7.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a day ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">500 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-8.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">EMOTE</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">2 days ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">2,221 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-9.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-orange !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#ffee57]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">2 days ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">2,456 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center text-base laptop-xl:text-xs laptop:text-xs ">
+              <a href="#" class="font-medium flex items-center w-[23.9375em] justify-center gap-3 border border-[#413ded] rounded-md h-[3.375em] hover:bg-[#211fa98a] transition-colors">View more recently listed
+                <svg class="w-[.5em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.884723 0.770061L7.11492 7.00026L0.884724 13.2305" fill="white"/> </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col recenctly">
+            <h2 class="text-[28px] font-semibold tablet:text-2xl mobile-xl:text-xl">RECENTLY TRADED</h2>
+            <div class="flex w-full gap-4 py-[30px] text-[#ffffff73] recenctly-traded">
+              <div class="flex items-center justify-center gap-3 w-52 active pb-[15px] mobile-xl:w-40 cursor-pointer" id="traded-heroes">
+                <img src="images/heroes.svg" alt="heroes" class="tablet:w-5 mobile-xl:w-4">
+                <span class="text-xl font-semibold capitalize tablet:text-lg mobile-xl:text-base">Heroes</span>
+              </div>
+              <div class="flex items-center justify-center gap-3 w-52 pb-[15px] mobile-xl:w-40 cursor-pointer" id="traded-cosmetics">
+                <img src="images/cosmetics.svg" alt="cosmetics" class="tablet:w-5 mobile-xl:w-4">
+                <span class="text-xl font-semibold capitalize tablet:text-lg mobile-xl:text-base">Cosmetics</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-8 pb-8 traded-heroes">
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-11.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-blue">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="text-[#00f0ff] text-[.75em] uppercase font-semibold">DYNASTY'S RANGER</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">SHANNA</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">26 minutes ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-red-600">913/913</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">729 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/a.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">7</span>
+                        </div>
+                        <img src="images/assassin.svg" alt="assassin" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-12.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-yellow">
+                      <div class="pl-[1em] border-l-4 border-l-[#ffee57]">
+                        <span class="text-[#ffee57] text-[.75em] uppercase font-semibold">GOLDEN HAND</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">LUCY MUFFY</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">54/237</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">1,600 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/b.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">2</span>
+                        </div>
+                        <img src="images/tank.svg" alt="tank" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-14.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-aqua">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="text-[#00f0ff] text-[.75em] uppercase font-semibold">The Baby</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">BIG PAPA</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">32/764</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">1,900 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/d.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">5</span>
+                        </div>
+                        <img src="images/marksman.svg" alt="marksman" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-13.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-orange">
+                      <div class="pl-[1em] border-l-4 border-l-[#ffee57]">
+                        <span class="text-[#ffee57] text-[.75em] uppercase font-semibold">ELF GUARDIAN</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">SERP</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-red-600">57/355</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">678 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/ss.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">10</span>
+                        </div>
+                        <img src="images/assassin.svg" alt="assassin" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-15.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-red">
+                      <div class="pl-[1em] border-l-4 border-l-[#ff7f7f]">
+                        <span class="text-[#ff7f7f] text-[.75em] uppercase font-semibold">penguin</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">VELVET</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">0/898</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">1690 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/s.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">11</span>
+                        </div>
+                        <img src="images/tank.svg" alt="tank" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-16.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-aqua">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="text-[#00f0ff] text-[.75em] uppercase font-semibold">BOOMBY SHARK</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">PHOENIX</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-red-600">899/889</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">999 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/e.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">9</span>
+                        </div>
+                        <img src="images/marksman.svg" alt="marksman" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-17.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-red">
+                      <div class="pl-[1em] border-l-4 border-l-[#ff7f7f]">
+                        <span class="text-[#ff7f7f] text-[.75em] uppercase font-semibold">CAT NINJA</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">DURASS</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-red-600">147/147</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">600 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/c.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">10</span>
+                        </div>
+                        <img src="images/marksman.svg" alt="marksman" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-18.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-purple">
+                      <div class="pl-[1em] border-l-4 border-l-[#ad00ff]">
+                        <span class="text-[#ff7bfa] text-[.75em] uppercase font-semibold">ROGUE SOLDIER</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">CLUSTER</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">27/447</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">1,600 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/h.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">3</span>
+                        </div>
+                        <img src="images/tank.svg" alt="tank" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-19.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-blue">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="text-[#00f0ff] text-[.75em] uppercase font-semibold">FORGOTTEN SAMURAI</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">EL DRAGON</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">0/557</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">2,221 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/f.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">8</span>
+                        </div>
+                        <img src="images/assassin.svg" alt="assassin" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/heroes/avatar-20.png" alt="avatar">
+                  <div class="info">
+                    <div class="name linear-purple">
+                      <div class="pl-[1em] border-l-4 border-l-[#ad00ff]">
+                        <span class="text-[#ff7bfa] text-[.75em] uppercase font-semibold">GODZ-RILLA</span>
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">KONG KEY</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a hour ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[.75em] font-medium">gTHC battle</span>
+                        <span class="text-[.875em] font-medium text-green-500">0/447</span>
+                      </div>
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">99,999 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute top-[18px] right-3 flex flex-col items-center justify-center gap-[.625em]">
+                        <img src="images/trophy-class/g.png" alt="battle" class="w-[2.3125em] h-[2.3125em]">
+                        <div class="level">
+                          <span class="text-[1.25em] font-bold">4</span>
+                        </div>
+                        <img src="images/tank.svg" alt="tank" class="w-[2.3125em]">
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-wrap hidden gap-8 pb-8 traded-cosmetics">
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-10.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">EMOTE</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">26 minutes ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">729 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-11.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">26 minutes ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">729 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-12.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">38 minutes ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">700 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-14.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR FRAME</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">11 hours ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">307 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-15.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR FRAME</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">21 hours ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">150 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-16.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">SPACESHIP</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">23 hours ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">70 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-17.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">EMOTE</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a day ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">50 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-18.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">a day ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">500 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img !w-[calc(100%-4.0625em)] !top-[3.125em]" src="images/cosmetics/cosmetic-19.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-blue !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#00f0ff]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">AVATAR</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">2 days ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">2,221 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-bg"></div>
+                <div class="card-info">
+                  <img class="info-img" src="images/cosmetics/cosmetic-20.png" alt="cosmetic">
+                  <div class="info">
+                    <div class="name linear-orange !p-[1em]">
+                      <div class="pl-[1em] border-l-4 border-l-[#ffee57]">
+                        <span class="flex font-bold text-[1.125em] text-white whitespace-nowrap">SPACESHIP</span>
+                      </div>
+                      <div class="flex items-center justify-between pl-[1em]">
+                        <span class="text-[.75em]">Released time</span>
+                        <span class="text-[.75em]">2 days ago</span>
+                      </div>
+                    </div>
+                    <div class="w-full bg-[#201850] flex flex-col p-[.5em_.75em_.75em_2em] rounded-b-lg">
+                      <div class="flex justify-between mt-2">
+                        <span class="text-[.75em] font-medium">Price</span>
+                        <div class="flex flex-col items-end">
+                          <div class="flex items-center gap-[.5em]">
+                            <img class="w-[1em] h-[1em]" src="images/price.png" alt="price">
+                            <span class="text-[1.125em] font-semibold text-[#ffe076]">2,456 <span class="text-[.75em]">THC</span></span>
+                          </div>
+                          <span class="text-[.75em] text-[#c6c9dc] font-medium">$&nbsp; 1.26 USD</span>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-0 bg-[#5336d0] flex items-center justify-center px-3 gap-[.25em] py-[.25em] rounded-tr-lg rounded-bl-lg">
+                        <img src="images/buy.svg" alt="buy" class="w-[1em] h-[1em]">
+                        <span class="text-[.875em] font-medium">Buy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-stretch justify-center gap-4 text-base laptop-xl:text-xs laptop:text-xs">
+              <span class="rounded-md bg-[#5336d0] py-2 px-3 hover:bg-[#795cf5] cursor-pointer transition-colors">
+                <svg class="w-[.6em] rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.884723 0.770061L7.11492 7.00026L0.884724 13.2305" fill="white"/> </svg>
+              </span>
+              <div class="flex items-center gap-2">
+                <input class="text-white bg-[#030320] text-center w-[60px] h-full rounded-md" type="number" name="page" id="page" min="1" max="5" value="1">
+                <span class="text-sm font-extralight">of 5</span>
+              </div>
+              <span class="rounded-md bg-[#5336d0] py-2 px-3 hover:bg-[#795cf5] cursor-pointer transition-colors">
+                <svg class="w-[.6em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.884723 0.770061L7.11492 7.00026L0.884724 13.2305" fill="white"/> </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main End -->
+
+    <!-- Footer -->
+    <footer class="grid grid-cols-3 grid-rows-2 justify-items-center bg-[#030320] pt-12 pb-4 gap-y-11 laptop-l:grid-rows-3 laptop-l:grid-cols-2 laptop-l:items-center tablet:gap-y-7 tablet:grid-rows-2 tablet:grid-cols-1 mobile-xl:grid-rows-1">
+      <div class="flex flex-col items-center justify-center gap-2">
+        <img src="images/footer/footer-logo.png" alt="logo" class="h-[122px] laptop-xl:h-[90px] laptop:h-[100px] tablet:h-[100px]">
+        <span class="text-base text-[#bfbcd2] font-medium tablet:text-sm mobile-xl:text-xs">2023© Wolffun Game. All rights reserved.</span>
+      </div>
+      <div class="flex justify-between w-full tablet:col-start-1 tablet:col-end-3">
+        <ul class="flex flex-col gap-5 w-full font-thin text-[#bfbcd2] tablet:items-center mobile-xl:gap-3">
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Home</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Thetan Arena</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Blog</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">FAQ</a></li>
+        </ul>
+        <ul class="flex flex-col gap-5 w-full font-thin text-[#bfbcd2] tablet:items-center mobile-xl:gap-3">
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Instruction</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Contact us</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Support</a></li>
+        </ul>
+        <ul class="flex flex-col gap-5 w-full font-thin text-[#bfbcd2] tablet:items-center mobile-xl:gap-3">
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">About Wolffun</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Policy</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Whitepaper</a></li>
+          <li><a href="#" class="hover:font-semibold hover:text-white tablet:text-sm mobile-xl:text-xs">Audit report</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-center gap-8 laptop-l:col-start-1 laptop-l:col-end-3 mobile-xl:gap-5">
+        <span class="text-xl font-medium tablet:text-base mobile-xl:text-sm">Join our Community</span>
+        <div class="flex gap-6">
+          <a href="#"><img src="images/social-medya/facebook.png" alt="facebook" class="w-10 tablet:w-8"></a>
+          <a href="#"><img src="images/social-medya/twitter.png" alt="twitter" class="w-10 tablet:w-8"></a>
+          <a href="#"><img src="images/social-medya/discord.png" alt="discord" class="w-10 tablet:w-8"></a>
+          <a href="#"><img src="images/social-medya/telegram.png" alt="telegram" class="w-10 tablet:w-8"></a>
+        </div>
+      </div>
+      <div class="flex col-start-2 gap-2 laptop-l:col-start-1 laptop-l:col-end-3 tablet:px-5 mobile-xl:flex-col mobile-xl:w-full mobile-xl:gap-6">
+        <div class="flex flex-col w-full gap-3">
+          <span class="font-medium tablet:text-sm mobile-xl:text-xs">Partnership Inquiry:</span>
+          <div class="flex flex-wrap gap-x-0.5">
+            <span class="font-medium text-[#bfbcd2] text-sm tablet:text-xs">Community/Business Partnership:</span>
+            <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Email Us</a>
+            <span class="text-[#bfbcd2]">
+              |
+            </span>
+              <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Sign Up</a>
+          </div>
+          <div class="flex flex-wrap gap-x-0.5">
+            <span class="font-medium text-[#bfbcd2] text-sm tablet:text-xs">Gaming Guild Application:</span>
+            <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Email Us</a>
+            <span class="text-[#bfbcd2]">
+              |
+            </span>
+              <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Sign Up</a>
+          </div>
+          <div class="flex flex-wrap gap-x-0.5">
+            <span class="font-medium text-[#bfbcd2] text-sm tablet:text-xs">Creator Program:</span>
+            <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Email Us</a>
+            <span class="text-[#bfbcd2]">
+              |
+            </span>
+              <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Sign Up</a>
+          </div>
+        </div>
+        <div class="flex flex-col w-full gap-3">
+          <span class="font-medium tablet:text-sm mobile-xl:text-xs">Game Support Inquiry:</span>
+          <div class="flex items-center gap-1">
+            <img src="images/footer/f-icon.png" alt="game-support" class="w-5 tablet:w-4">
+            <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Wolffun Helpshift</a>
+          </div>
+          <div class="flex items-center gap-1">
+            <img src="images/footer/f-icon.png" alt="game-support" class="w-5 tablet:w-4">
+            <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Discord - Game Support Channel</a>
+          </div>
+          <div class="flex items-center gap-1">
+            <img src="images/footer/f-icon.png" alt="game-support" class="w-5 tablet:w-4">
+            <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Discord - Marketplace Support Channel</a>
+          </div>
+          <div class="flex items-center gap-1">
+            <img src="images/footer/f-icon2.png" alt="game-support" class="w-5 tablet:w-4">
+            <a href="#" class="text-sm text-[#00a9ff] underline underline-offset-4 font-medium  tablet:text-xs">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- CountUp JS -->
+    <script src="js/countUp.umd.js"></script>
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
