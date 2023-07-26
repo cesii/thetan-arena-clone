@@ -53,4 +53,4 @@ Katkılarınızı bekliyorum! Eğer bir hata bulduysanız veya yeni bir özellik
 
 ## Lisans
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylı bilgi için [LİSANS](LİSANS) dosyasını inceleyebilirsiniz.
+Bu proje MIT Lisansı altında lisanslanmıştır. Detaylı bilgi için [LİSANS](./LICENSE) dosyasını inceleyebilirsiniz.
